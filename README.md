@@ -9,175 +9,129 @@
 
 # 1. Project Overview
 
-## The Problem
+### 1.1 The Problem
 
-University students often experience burnout not because of one overwhelming responsibility, but because multiple ordinary responsibilities accumulate at the same time.
+University students don't collapse because of one overwhelming thing. They collapse because six ordinary things arrive at once, none of them alarming on its own, with nothing anywhere showing the total.
 
-Academic assignments, classes, part-time work, social commitments, physical fatigue, and daily errands compete for a student's limited capacity. However, existing productivity and wellbeing applications generally treat these problems separately.
+&nbsp;
 
-The main causes we identified are:
+We broke that down into six causes, and each one drove a design decision.
 
-1. **Students cannot see their total workload** — commitments are scattered across calendars, university portals, messaging applications, planners, and personal memory.
-2. **Workload is not one-dimensional** — mental effort, time, physical energy, social obligations, and errands affect students differently.
-3. **Student capacity changes from week to week** — poor sleep, low energy, low mood, and lack of rest can make the same workload feel much heavier.
-4. **The cost of new commitments is unclear** — students may accept additional responsibilities without understanding what they will have to sacrifice.
-5. **Replanning is difficult when already overwhelmed** — students often need to organise themselves before existing productivity tools can help them.
-6. **Rest is easily sacrificed** — assignments and work have deadlines, while rest is often treated as optional.
+&nbsp;
 
-The underlying problem is that **burnout builds up over time rather than appearing from a single stressful day**. Therefore, students need a system that considers both their workload and their changing capacity.
+**1\. Nobody can see the total.** A student's commitments live in four places at once the university portal, a WhatsApp group, a paper planner, and their own memory. No single place shows the sum, so the only signal they have is a vague feeling of being busy.
 
-### Stakeholders
+&nbsp;
 
-| Stakeholder                            | What is at stake                                                                                    |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| **University Students**                | Academic performance, wellbeing, physical energy, and ability to balance multiple responsibilities. |
-| **University Counselling Services**    | Earlier awareness of students experiencing prolonged workload pressure.                             |
-| **Lecturers & Programme Coordinators** | Better understanding of workload pressure before it affects attendance and submissions.             |
-| **Student Employers**                  | More predictable availability and reduced impact from student burnout.                              |
-| **Family & Friends**                   | Better awareness of changes in a student's workload and wellbeing.                                  |
+**2\. Being busy is not one thing.** A student can have a free afternoon and still be finished. Thinking, time, physical energy, social obligation and life admin are five different reserves, and they empty at different speeds. Being told "you have time on Thursday" is useless when the problem is that you have nothing left to think with.
 
-### Existing Solutions
+&nbsp;
 
-| Existing Solution    | What It Does Well                                                                        | Why It Falls Short                                                                                                          |
-| -------------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| **Motion**           | Automatically schedules tasks based on deadlines, priorities, duration and availability. | Focuses on fitting work into the calendar rather than determining whether the workload fits the student's current capacity. |
-| **Notion / Todoist** | Good for recording and organising tasks.                                                 | Counts tasks but does not measure how mentally or physically demanding those tasks are.                                     |
-| **Google Calendar**  | Useful for classes, appointments and fixed commitments.                                  | Mainly understands time and does not account for fatigue, sleep or mental capacity.                                         |
-| **Daylio / Finch**   | Makes mood and wellbeing tracking simple.                                                | Tracks how users feel but does not connect their feelings to the workload causing them.                                     |
-| **Forest**           | Helps users focus during individual work sessions.                                       | Focuses on one session rather than the student's overall weekly workload.                                                   |
-| **Headspace / Calm** | Provides meditation and relaxation content.                                              | Addresses the feeling of stress rather than the workload contributing to it.                                                |
+**3\. What you can handle changes week to week, but every tool assumes it doesn't.** After three nights of five hours' sleep, the same workload is genuinely heavier. Students feel this as "why is this week so much worse when I'm doing the same amount?" and no planner accounts for it.
 
-### The Gap
+&nbsp;
 
-Existing applications generally fall into two categories:
+**4\. Saying yes takes a second; the cost arrives weeks later.** This is the most important moment in the whole problem, and nothing intervenes at it. By the time an extra commitment starts to hurt, the deadline is close and there is no room left to move anything.
 
-- **Productivity applications** understand what students have to do.
-- **Wellbeing applications** understand how students feel.
+&nbsp;
 
-However, they rarely connect **workload + personal capacity + wellbeing**.
+**5\. Sorting out your week is itself hard work.** When a student is overloaded, the ability to sit down and calmly re-plan is exactly the thing they have run out of. Tools that need you to be organised before they can help you get organised fail the people who most need them.
 
-**Ballast is designed to bridge this gap.**
+&nbsp;
+
+**6\. Rest has no deadline, so it always loses.** Assignments have due dates. Shifts have start times. Rest has neither, so it is the first thing dropped and the last thing scheduled every week, until there is nothing left.
+
+&nbsp;
+
+Underneath all six is the thing most tools miss completely: **burnout builds up, it doesn't strike.** A student sitting at a steady 70% of their limit for five weeks with no rest is in more danger than one who hits 115% for two days and then recovers. Any app that only reacts to spikes is watching the wrong thing.
+
+#### Who this affects
+
+| Stakeholder                              | What is at stake for them                                                                                                                                        |
+| :--------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **University students** our primary user | Especially those balancing a full course load with part-time work. They carry the cost directly: falling grades, damaged health, and in many cases dropping out. |
+| **University counselling services**      | They currently meet students only at crisis point. They have no early warning, and no way to see when a whole cohort is under strain.                            |
+| **Lecturers and programme coordinators** | No visibility of workload pressure until submissions start slipping by which point help is repair work, not prevention.                                          |
+| **Employers of student part-timers**     | Absorb the result as unreliable availability and staff turnover, without ever seeing the cause.                                                                  |
+| **Family and friends**                   | Usually the first to notice something is wrong, and the least equipped to name what it is.                                                                       |
+
+#### How big the problem is
+
+| Finding                                                                         | Figure            | Source                                              |
+| :------------------------------------------------------------------------------ | :---------------- | :-------------------------------------------------- |
+| Malaysian university students with moderate-to-severe **anxiety**               | **66.2%**         | DASS-21 survey, 388 students, Selangor              |
+| Moderate-to-severe **depression**                                               | **53.9%**         | Same study                                          |
+| Moderate-to-severe **stress**                                                   | **44.6%**         | Same study                                          |
+| University students worldwide reporting high **emotional exhaustion**           | **56.3%**         | Review of 44 studies, 26,500 students, 31 countries |
+| Students reporting high **cynicism**                                            | **55.3%**         | Same review                                         |
+| Mental health apps: people who start using them, versus people still using them | **92.4% → 61.8%** | Review of 79 clinical trials                        |
+
+&nbsp;
+
+That last row shaped our product as much as any of the others. These apps get installed and then abandoned. The same review found that people stayed longer when an app sent reminders, and stayed longer when the app did **not** use streaks, points or badges findings we designed around directly.
+
+### 1.2 Existing apps, and why they fall short
+
+We looked at five kinds of tool a student might already have on their phone.
+
+&nbsp;
+
+| App                  | What it does well                                                                                                                                                                              | Why it doesn't solve this                                                                                                                                                                                                                                                                                        |
+| :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Motion**           | The closest thing to our approach. It automatically places tasks on your calendar based on priority, deadline, how long they take and what depends on what, and reshuffles when things change. | It works out how to **fit the work in** not whether the work fits the person. It has no idea how tired you are, how much you have slept, or whether you need a break. It will happily fill every hour you have and report a tidy calendar while doing it. It is also built and priced for working professionals. |
+| **Notion / Todoist** | Very good at capturing and organising tasks.                                                                                                                                                   | They count **how many things**, not **how heavy they are**. Three assignments can be far heavier than twelve errands. A student looking at 14 open tasks learns nothing about whether 14 is survivable.                                                                                                          |
+| **Google Calendar**  | Reliable for fixed commitments like classes and shifts.                                                                                                                                        | It only understands **clock time**. A free Thursday afternoon means nothing if your brain is finished. Empty is not the same as available.                                                                                                                                                                       |
+| **Daylio / Finch**   | Genuinely good at making a daily mood check quick and habitual.                                                                                                                                | They record **how you feel**, not **why**. Knowing you feel awful doesn't tell you which part of your life to change or what to move. Finch also turns self-care into looking after a virtual pet, which quietly becomes one more daily duty a real risk in an app for people who already have too many.         |
+| **Forest**           | Effective for getting through one focused session.                                                                                                                                             | It solves **one hour, not the week**. It has no view of the workload that hour sits inside.                                                                                                                                                                                                                      |
+| **Headspace / Calm** | High quality guided meditation and sleep content.                                                                                                                                              | They treat **how the stress feels**, not what is causing it. Neither touches the workload underneath.                                                                                                                                                                                                            |
+
+&nbsp;
+
+**The gap.** Every one of these sits on one side of a divide. Planners know what you have to do but nothing about how you are. Wellbeing apps know how you are but nothing about what you have to do. Nothing joins the two and the join is exactly where burnout happens. On top of that, none of them step in at the moment a student takes on too much, and none of them will ever tell a student to **do less**.
+
+&nbsp;
 
 ---
 
-## Our Solution
+## 1.3\. Our Solution
 
-**Ballast** is a mobile Stress & Workload Manager designed to help university students understand how much they are carrying across different areas of their lives. Instead of measuring workload only through the number of tasks or available hours, Ballast considers five dimensions: **Thinking, Time, Body, People, and Errands**. The application combines commitments with short daily check-ins such as sleep, energy, mood and stress to estimate the student's current capacity. Ballast then helps students make better decisions by suggesting schedule changes, protecting rest, warning about the cost of new commitments, and forecasting where their workload is heading.
+### 1.3.1 What Ballast is
 
-> **"The goal was never to carry nothing. It is to know how much you are carrying."**
-
-### Core Feature Set
-
-#### 📊 Workload Management
-
-- Five workload dimensions:
-  - Thinking
-  - Time
-  - Body
-  - People
-  - Errands
-
-- Overall weekly workload percentage
-- Individual workload scores
-- Capacity adjustment based on sleep, energy, mood and rest
-- Identification of the most overloaded area
-- Workload trend tracking
-- Rest owed calculation
-
-#### 📝 Daily Check-In
-
-- 15-second daily check-in
-- Sleep tracking
-- Energy tracking
-- Mood tracking
-- Stress tracking
-- Mood and workload history
-- Optional check-in streak
-
-#### 📅 Smart Planning
-
-- Quick task entry
-- Morning / afternoon / evening planning
-- Priority levels
-- Automatic workload categorisation
-- Task sizing: Small / Medium / Large
-- "I keep putting this off" flag
-- Errand grouping
-
-#### 🔄 Workload Intervention
-
-- **Rearrange My Week**
-- Automatic schedule optimisation
-- Move tasks to lighter days
-- Group similar errands
-- Delay lower-priority tasks
-- Protect scheduled rest
-- Explain the reason behind every suggested change
-
-#### ⚠️ Commitment Warning
-
-Before accepting a new commitment, Ballast shows the potential impact on the student's workload.
-
-Example:
-
-> **"This takes you from 104% to 119%. To fit it in, something needs to move."**
-
-Users can choose:
-
-- **Add anyway**
-- **Add and rearrange my week**
-- **Not now**
-
-#### 🛌 Recovery
-
-- Protected rest blocks
-- Rest recommendations
-- Focus timer
-- Guided breathing
-- Water reminders
-- Sleep reminders
-- Movement reminders
-- Notification limits
-
-#### 🤖 AI Assistant
-
-- Add tasks using natural language
-- Ask questions about personal workload
-- Explain workload calculations
-- Explain why a workload warning was triggered
-- Help users understand changes between weeks
-- Provide responses based on the application's calculated data
-
-#### 🔮 Forecasting
-
-- 14-day workload forecast
-- Burnout-risk direction
-- Future scenario comparison
-- Weekly review
-- Personal workload patterns
-- Confidence levels for predictions
-
-#### 🔍 Explainable Workload Calculation
-
-Users can ask:
-
-- **Why am I seeing this?**
-- **How did you calculate this?**
-- **What if I remove this task?**
-
-Ballast provides the calculation and information behind the result instead of presenting an unexplained score.
-
-### How the app works out your number
-
-**Step 1 — You tell it what you are carrying.** For each thing, roughly how long it will take, when it is due, and how much it matters. You can type it in as a form, or just tell the assistant in plain words.
+**Ballast** is a mobile app that shows a student exactly how much they are carrying across five different parts of their life, and then helps them put some of it down. It produces one figure how full you are this week, as a percentage and breaks that figure down so you can see which part of your life is actually the problem. Where other apps stop at showing you a number, Ballast rearranges your week to bring that number down, warns you what a new commitment will cost **before** you agree to it, and defends the time you have set aside to rest. An assistant you can talk to in ordinary language sits across all of it, and every figure the app shows can be opened up to see exactly how it was worked out.
 
 &nbsp;
 
-**Step 2 — You check in for fifteen seconds a day.** Four taps: how long you slept, your energy, your mood, your stress level. That is the entire daily commitment.
+The name is the idea. Ballast is the weight a ship deliberately carries to stay upright too little and it tips over, too much and it sinks. The goal was never to carry nothing. It is to know how much you are carrying.
+
+### 1.3.2 The five parts of your life we measure
+
+Most apps treat "busy" as a single thing. It isn't. Ballast keeps five separate scores, because a student can be completely fine in four of them and drowning in the fifth.
 
 &nbsp;
 
-**Step 3 — The app works out how full each of the five areas is.** It compares what you are carrying against what you can carry.
+| Part of your life | What it covers                                                                                      | Something heavy in this area             |
+| :---------------- | :-------------------------------------------------------------------------------------------------- | :--------------------------------------- |
+| **Thinking**      | Mental and emotional effort deep work, exams, difficult conversations, things you are worried about | Writing your final year project report   |
+| **Time**          | Straightforward hours committed                                                                     | An 18-hour week of classes               |
+| **Body**          | Physical wear sleep debt, long shifts, commuting, illness, standing all day                         | A double weekend shift on your feet      |
+| **People**        | Social things you are obliged to attend                                                             | A family wedding you cannot skip         |
+| **Errands**       | Life admin laundry, banking, forms, renewals, groceries                                             | Renewing your road tax before it expires |
+
+&nbsp;
+
+> **A note on "People".** Social time appears here as something that costs you, but it is also one of the best ways to recover. Ballast tells the two apart with a single question: is this an obligation? A group project meeting is a cost. Coffee with a friend you actually like is recovery.
+
+### 1.3.3 How the app works out your number
+
+**Step 1 : You tell it what you are carrying.** For each thing, roughly how long it will take, when it is due, and how much it matters. You can type it in as a form, or just tell the assistant in plain words.
+
+&nbsp;
+
+**Step 2 : You check in for fifteen seconds a day.** Four taps: how long you slept, your energy, your mood, your stress level. That is the entire daily commitment.
+
+&nbsp;
+
+**Step 3 : The app works out how full each of the five areas is.** It compares what you are carrying against what you can carry.
 
 &nbsp;
 
@@ -185,7 +139,7 @@ Two things here are different from every other tool we looked at, and they are t
 
 &nbsp;
 
-**What you can handle shrinks when you are running on empty.** If you have been sleeping five and a half hours against a target of seven and a half, Ballast treats your thinking capacity as roughly a quarter smaller than normal. Nothing about your workload changed — you are simply working with less. This is why the same week can feel far worse than an identical one a month ago, and it is the thing students find hardest to explain to other people.
+**What you can handle shrinks when you are running on empty.** If you have been sleeping five and a half hours against a target of seven and a half, Ballast treats your thinking capacity as roughly a quarter smaller than normal. Nothing about your workload changed you are simply working with less. This is why the same week can feel far worse than an identical one a month ago, and it is the thing students find hardest to explain to other people.
 
 &nbsp;
 
@@ -197,27 +151,27 @@ _One exception, on purpose:_ time and errands do **not** shrink. A bad week stil
 
 &nbsp;
 
-**Step 4 — You get one number and one sentence.** For example: _"You're at 103% this week. Thinking is the problem — it's at 128%."_ Tap the number and you can see exactly which commitments produced it.
+**Step 4 : You get one number and one sentence.** For example: _"You're at 103% this week. Thinking is the problem it's at 128%."_ Tap the number and you can see exactly which commitments produced it.
 
-### How the number is actually calculated
+### 1.3.4 How the number is actually calculated
 
-Everything above comes from four short calculations. They run on the phone, offline, in a fraction of a second. Nothing is guessed by a black box — a student can follow every step, and so can a reviewer.
+Everything above comes from four short calculations. They run on the phone, offline, in a fraction of a second. Nothing is guessed by a black box a student can follow every step, and so can a reviewer.
 
-#### Calculation 1 — how much you can handle this week
+#### Calculation 1 : how much you can handle this week
 
 R \= 1 \+ 0.04 × (your average sleep − your sleep target)
 
 &nbsp;
 
-         + 0.05 × (your average energy − 3\)
+         + 0.05 × (your average energy − 3)
 
 &nbsp;
 
-         + 0.03 × (your average mood   − 3\)
+         + 0.03 × (your average mood   − 3)
 
 &nbsp;
 
-         − 0.02 × (days since your last real break, counted up to 7\)
+         − 0.02 × (days since your last real break, counted up to 7)
 
 &nbsp;
 
@@ -231,7 +185,7 @@ Your capacity this week \= your normal capacity × R
 
 It applies to **Thinking, Body and People only**. Time and Errands keep their full capacity, because a bad week still has 168 hours in it. Your energy genuinely drops; the clock does not.
 
-#### Calculation 2 — how heavy one commitment is
+#### Calculation 2 : how heavy one commitment is
 
 weight \= hours × how much it draws on that area
 
@@ -253,9 +207,9 @@ avoidance \= 1.3 if flagged "I keep putting this off", otherwise 1.0
 
 &nbsp;
 
-**In plain words.** An eight-hour report that leans heavily on thinking (0.9) and is due in two days (urgency 1.5) is far heavier than eight hours of shifts. Urgency and avoidance apply to the **thinking** part only — a deadline getting closer does not add hours to a task, it adds pressure. Same with avoidance: a job you keep dodging sits in your head all week even while you never touch it. That is real weight, and no other app counts it.
+**In plain words.** An eight-hour report that leans heavily on thinking (0.9) and is due in two days (urgency 1.5) is far heavier than eight hours of shifts. Urgency and avoidance apply to the **thinking** part only a deadline getting closer does not add hours to a task, it adds pressure. Same with avoidance: a job you keep dodging sits in your head all week even while you never touch it. That is real weight, and no other app counts it.
 
-#### Calculation 3 — the overall figure
+#### Calculation 3 : the overall figure
 
 How full an area is \= total weight in that area ÷ your capacity for it
 
@@ -271,7 +225,7 @@ Area weights: Thinking 30% · Time 30% · Body 15% · People 15% · Errands 10%
 
 **In plain words.** Seventy per cent of the figure is a fair average across your whole life. The other thirty per cent is your single worst area. That second part is what stops one overwhelmed area disappearing behind four healthy ones.
 
-#### Calculation 4 — the direction you are heading
+#### Calculation 4 : the direction you are heading
 
 Risk \= 0.30 × how much of the last 28 days you spent above 85%
 
@@ -293,9 +247,9 @@ Risk \= 0.30 × how much of the last 28 days you spent above 85%
 
 &nbsp;
 
-**In plain words.** Notice that not one of these asks how bad today was. Every one asks **how long**. A student sitting at a steady 70% for five weeks with no rest scores higher here than one who hit 115% for two days and then properly recovered — which is the correct answer, and the whole reason this is a separate figure from the one on the home screen.
+**In plain words.** Notice that not one of these asks how bad today was. Every one asks **how long**. A student sitting at a steady 70% for five weeks with no rest scores higher here than one who hit 115% for two days and then properly recovered which is the correct answer, and the whole reason this is a separate figure from the one on the home screen.
 
-#### A worked example — Aina, one real week
+#### A worked example : Aina, one real week
 
 Final year, 18 hours of class, a 14-hour café job. Every number below is calculated, not assumed.
 
@@ -313,11 +267,11 @@ Final year, 18 hours of class, a 14-hour café job. Every number below is calcul
 
 &nbsp;
 
-_Thursday skipped — the app used her rolling average and told her so._
+_Thursday skipped the app used her rolling average and told her so._
 
 &nbsp;
 
-**Step 1 — her capacity multiplier**
+**Step 1 : her capacity multiplier**
 
 &nbsp;
 
@@ -337,7 +291,7 @@ Her thinking capacity drops from 30 units to **21.9**. Her workload did not chan
 
 &nbsp;
 
-**Step 2 — what she is carrying, in Thinking**
+**Step 2 : what she is carrying, in Thinking**
 
 &nbsp;
 
@@ -354,11 +308,11 @@ Her thinking capacity drops from 30 units to **21.9**. Her workload did not chan
 
 &nbsp;
 
-One task is half her mental week. **The FYP alone is 14 of those 28 units — and 3.2 of them exist purely because she flagged it as something she keeps avoiding.**
+One task is half her mental week. **The FYP alone is 14 of those 28 units and 3.2 of them exist purely because she flagged it as something she keeps avoiding.**
 
 &nbsp;
 
-**Step 3 — all five areas**
+**Step 3 : all five areas**
 
 &nbsp;
 
@@ -376,11 +330,11 @@ One task is half her mental week. **The FYP alone is 14 of those 28 units — an
 
 &nbsp;
 
-**Step 4 — her overall figure**
+**Step 4 : her overall figure**
 
 &nbsp;
 
-weighted average = 0.30(1.28) \+ 0.30(0.80) \+ 0.15(0.87) \+ 0.15(0.90) \+ 0.10(0.40)
+weighted average \= 0.30(1.28) \+ 0.30(0.80) \+ 0.15(0.87) \+ 0.15(0.90) \+ 0.10(0.40)
 
 &nbsp;
 
@@ -388,11 +342,11 @@ weighted average = 0.30(1.28) \+ 0.30(0.80) \+ 0.15(0.87) \+ 0.15(0.90) \+ 0.10(
 
 &nbsp;
 
-Overall = 0.7 × 0.930 + 0.3 × 1.28
+Overall = 0.7 × 0.930 \+ 0.3 × 1.28
 
 &nbsp;
 
-        = 0.651 + 0.384
+        = 0.651 \+ 0.384
 
 &nbsp;
 
@@ -400,11 +354,11 @@ Overall = 0.7 × 0.930 + 0.3 × 1.28
 
 &nbsp;
 
-**The average on its own would have said 93%** — comfortably inside the amber band, no warning triggered, nothing happens. Adding her worst area pushes it to 103% and the app steps in. That difference is the whole reason the calculation is built this way.
+**The average on its own would have said 93%** comfortably inside the amber band, no warning triggered, nothing happens. Adding her worst area pushes it to 103% and the app steps in. That difference is the whole reason the calculation is built this way.
 
 &nbsp;
 
-**Step 5 — where she is heading**
+**Step 5 : where she is heading**
 
 &nbsp;
 
@@ -435,7 +389,119 @@ of rising → she never reaches it.
 
 &nbsp;
 
-That difference — a date, versus no date — is the entire product in one line. And it is shown with its honesty attached: **9 check-ins in 14 days, medium confidence.** Below five check-ins, the forecast is hidden rather than guessed.
+That difference a date, versus no date is the entire product in one line. And it is shown with its honesty attached: **9 check-ins in 14 days, medium confidence.** Below five check-ins, the forecast is hidden rather than guessed.
+
+### 1.3.5 What the app actually does about it
+
+Measuring is the easy half. These six things are what make Ballast a tool rather than a report.
+
+&nbsp;
+
+**1 · It rearranges your week for you.** One button. Ballast tries thousands of different arrangements of your week and keeps the best one moving tasks to lighter days, grouping all your errands into one morning so you are not switching between different kinds of work all day, and pushing back the least important things when there is genuinely too much. It never touches your fixed classes, your work shifts, or time you have set aside to rest.
+
+&nbsp;
+
+Every single change comes with one plain sentence explaining it _"Grouping these saves you three separate context switches"_ and nothing moves until you press apply. The app proposes; you decide.
+
+&nbsp;
+
+**2 · It stops you at the moment you say yes.** This is the feature that goes straight at the heart of the problem. When you add something that would push you over your limit, Ballast interrupts before you commit:
+
+&nbsp;
+
+> _"This takes you from 104% to 119%. To fit it in, something moves: your FYP draft slips to Friday, or you lose Saturday's rest."_ **Add anyway** · **Add and rearrange my week** · **Not now**
+
+&nbsp;
+
+"Add anyway" is always the first option an app that overrules your judgement gets deleted. "Not now" parks the item in a maybe list rather than deleting it, because the aim is to delay things, not to refuse them.
+
+&nbsp;
+
+**3 · It defends your rest.** Rest blocks are treated as real commitments with time reserved. The rearranging tool will delay an assignment before it will touch your rest. When you do not get the rest you needed, it builds up as a visible figure _"you owe yourself about 6 hours"_ which shrinks again as you catch up, and is capped so it can never become something else to feel bad about.
+
+&nbsp;
+
+**4 · It knows what to do after a long shift.** If you finish a six-hour shift on two out of five energy, Ballast will not show you your assignment list. It gives you recovery first, then surfaces exactly one task afterwards, then tells you to stop. Work, then recovery, then one piece of work, then rest and it never quietly queues a second task behind the first.
+
+&nbsp;
+
+**5 · It tells you where this is heading.** Because burnout builds up rather than strikes, Ballast looks at the direction you are travelling in, not just today. It projects the next fourteen days and gives you a date:
+
+&nbsp;
+
+> _"On the way you're going, you reach high burnout risk around Thursday the 11th. If you take the two rest blocks we've suggested, you don't reach it at all. If you also say yes to the group project sitting in your maybe list, you get there on Monday instead three days sooner."_
+
+&nbsp;
+
+Three futures, always shown together. We never show the bad one on its own, because a warning without a way out is just something else to worry about. And when there is not enough information to be honest fewer than five check-ins in a fortnight the app hides the forecast rather than guessing.
+
+&nbsp;
+
+**6 · You can just talk to it.** An assistant sits across the whole app. Its most useful job is the least dramatic one: you can type _"two assignments due next week, a double shift Saturday, and I need to renew my road tax"_ and it turns that into four properly weighted entries, shown back to you to correct before anything is saved. No forms.
+
+&nbsp;
+
+It can also answer questions about yourself:
+
+&nbsp;
+
+> **"I'm feeling really exhausted this week compared to last week."**
+
+&nbsp;
+
+> _"You're not imagining it. Your load is 103% this week against 78% last week, and almost all of the jump is in thinking. Three things changed: your FYP moved to Wednesday, you picked up an extra shift, and you've averaged 5.5 hours of sleep against your 7.5 target. Last week you kept both of your rest blocks. This week, neither. Which of those feels most like the problem the deadline, the shifts, or the sleep?"_
+
+&nbsp;
+
+**Important:** the assistant does not work anything out on its own. All the calculations and all the decisions are made by the app's own rules, which are fixed, work offline, and can be inspected. The assistant's job is to explain those findings in your own words and to help you get things into the app. Every fact it states is a figure the app has actually calculated, and you can tap any sentence to see where it came from. It never gives medical advice, and it is not the thing deciding how you are doing.
+
+### 1.3.6 The app explains everything it tells you
+
+Students will not trust a number about their own wellbeing if they cannot see where it came from. So any figure in Ballast can be asked three questions:
+
+&nbsp;
+
+| Question                         | What you get back                                                                                                                      |
+| :------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| **Why am I seeing this?**        | The exact rule that fired, and the values that triggered it _"Thinking has been over your limit for 2 days with no rest booked."_      |
+| **How did you get that number?** | The full working, layer by layer the total, then the five areas, then the individual commitments, then the arithmetic on a single one. |
+| **What if I dropped this?**      | The app recalculates without that item and shows you the difference.                                                                   |
+
+&nbsp;
+
+Every conclusion also carries an honest confidence level based on how much you have actually told it _"medium confidence, you checked in 4 of the last 7 days."_ An app that admits what it does not know is more trustworthy than one that reports a precise-looking number from almost no information.
+
+### 1.3.7 Your choices, and your privacy
+
+We made three decisions here deliberately, and each one is offered as a choice rather than imposed.
+
+&nbsp;
+
+**Streaks are optional, and you are asked at setup.** Rather than burying it in settings, Ballast asks directly: _"Do streaks help you, or stress you?"_ Neither answer is presented as the right one. If you keep it, the streak counts your **check-in**, never what you got done so a day where you log "wrecked, slept four hours" still counts. You get two rest days a month applied automatically, and breaking it shows _"welcome back"_, never a penalty. If the app notices your streak is costing you sleep, it offers to switch it off.
+
+&nbsp;
+
+**Your diary has three levels, and you pick.**
+
+&nbsp;
+
+| Level                        | What the assistant can see                        | Why you might choose it                                                                                                                         |
+| :--------------------------- | :------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Off**                      | Nothing                                           | You want the app, not the conversation                                                                                                          |
+| **Numbers only** _(default)_ | Your load, your commitments, your check-in scores | Enough for almost every useful answer, and your writing never leaves your phone                                                                 |
+| **Numbers and diary**        | Also what you have written                        | It can notice things numbers cannot that the same person keeps coming up in your entries, or that you write differently when you are struggling |
+
+&nbsp;
+
+We explain plainly at the moment of choosing that the top level sends what you have written off your phone to be read. That belongs in front of you when you decide, not in a settings note afterwards.
+
+&nbsp;
+
+**Nothing happens to your week without you.** The rearranging tool proposes and you accept. The intercept offers and you choose. The assistant notices and you confirm. The same principle runs through all three, and it is deliberate.
+
+&nbsp;
+
+**And it is not a medical app.** Ballast measures workload and what you tell it about yourself. It does not diagnose anything. If risk stays high for a long time, it quietly surfaces the university counselling service and a helpline always for you to choose, never reported to anyone.
 
 ---
 
