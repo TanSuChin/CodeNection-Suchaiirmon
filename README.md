@@ -3,7 +3,7 @@
 **Team:** Tan Su Chin, Chairis A/L Pum, Muhammad Irfan Bin Muhammad Zaki, Wattcharak A/L Wiang
 &nbsp;**Problem Statement:** Stress & Workload Manager &nbsp;
 **Video Presentation:** [Unlisted YouTube Link](#) &nbsp;
-**Presentation Slides:** [Public Link](#)
+**Presentation Slides:** [Link Slide](https://canva.link/pt4q741fztjlxhk)
 
 ---
 
@@ -553,31 +553,55 @@ The mindmap shows the different directions considered during ideation, including
 ### User Flow
 
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-02%20Find%20Capacity.drawio.png)
+onboarding step where Ballast collects the student's baseline weekly commitments sleep target, class hours, part-time work, and travel to calculate discretionary hours and create the initial five-area capacity profile (Thinking, Time, Body, People, Errands).
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-03%20First%20Commitments.drawio.png)
+student enters their three biggest active commitments during onboarding, selecting size (S/M/L), priority, due date, and time block. Ballast auto-classifies the area and allows correction before saving. The loop continues until the student is done.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-04%20Streak%20Preference.drawio.png)
+asks whether streaks motivate or stress the student. If enabled, the streak counter tracks daily check-ins only — never tasks completed — with two automatic rest days per month. A broken streak shows a welcome-back message, not a punishment.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-06%20Morning%20Notification.drawio.png)
+morning, Ballast checks the student's current load and sends a single, load-aware push notification if within the daily limit (max 2/day, 5/week) and outside quiet hours. The notification carries a fact about the day, not a summons — tapping it opens the Home dashboard.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-07%20Daily%20Check-In.drawio.png)
-![User Flow](userFlow/Ballast_User_Flows_DrawIO-08%20Home%20Dashboard.drawio.pngBallast_User_Flows_DrawIO-03%20First%20Commitments.drawio.png)
+check-in capturing sleep duration, energy, mood, and stress. Skipping leaves the streak intact. Saved responses update rolling averages and trigger a capacity recalculation, ensuring the load index reflects how the student actually feels that day.
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-08%20Home%20Dashboard.drawio.png)
+central hub of Ballast. Displays the overall Load Ring percentage, five-area breakdown, worst area, rest owed, and burnout direction. From here the student can navigate to every major feature: load details, inbox, rebalance, recovery, check-in, forecast, and the AI assistant.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-09%20Commitment%20Inbox.drawio.png)
+list of all active commitments, filterable by all, due this week, or flagged as avoiding. Selecting any commitment opens its detail view, where the student can edit, delete, reprioritise, resize, reschedule, flag avoidance, or move its time block — each change triggers a load recalculation.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-10%20Add%20Commitment.drawio.png)
+student adds a new commitment via quick add (size only) or a detailed form (name, time, due date, priority, area, time block, avoidance flag). The system estimates commitment weight and updates the weekly load. If adding it would cause overload, the Say No Intercept is triggered before saving.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-11%20Say%20No%20Intercept.drawio.png)
+new commitment would push the student into overload, Ballast shows the projected load increase and the exact trade-offs required (e.g. a deadline slips or a rest block is lost). The student chooses to add anyway, add and rebalance, or park the commitment in a Maybe list — nothing is decided without them.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-12%20Rebalance%20My%20Week.drawio.png)
+Ballast reads all commitments, fixed blocks (classes, shifts), and protected rest, then generates a proposed lighter schedule using four move types: BATCH, MOVE, DEFER, and PROTECT. Every proposed change includes a plain-language reason. Fixed commitments and protected rest blocks are never touched by the system.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-13%20Plan%20Applied.drawio.png)
+student confirms a rebalance proposal, Ballast applies all changes, recalculates the load, and shows a clear before-and-after summary of what moved and why — including any newly protected recovery block. A one-tap undo is available immediately after.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-14%20After-Shift%20Sequencer.drawio.png)
+When a shift ends, Ballast checks its duration and the student's last recorded energy level. If the shift exceeded five hours or energy was at 2 or below, recovery is enforced first — one recovery action, then exactly one task, then rest. The system never surfaces a task queue after a long or draining shift.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-15%20Recovery.drawio.png)
+synthesises load, energy, sleep, and rest owed to generate a personalised recovery suggestion for the student. The student can book a protected rest block directly from this screen; once booked, the block is locked and the rebalancer works around it, never into it.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-16%20Protected%20Rest.drawio.png)
+rest block is booked and marked protected, the scheduling system treats it as immovable — only work commitments are rearranged around it. Completed rest reduces rest owed and improves burnout risk; missed rest increases it. Protection is the core mechanism by which Ballast defends recovery.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-17%20Focus%20Timer.drawio.png)
+style timer for working on a single commitment, with optional background sound. Ballast caps focus at four rounds — the point at which attention research shows diminishing returns — and routes the student to recovery immediately after, not to the next task.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-18%20Guided%20Breathing.drawio.png)
+minute 4-7-8 breathing session available from the Recovery tab. Nothing is logged and nothing is counted. The student can leave at any time. It is offered as an accessible, zero-commitment recovery micro-action.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-20%20Burnout%20Forecast.drawio.png)
+least five check-ins over 28 days, Ballast projects the next 14 days across three scenarios: current trajectory, with suggested rest, and with a parked commitment added. It displays an estimated risk date and a confidence level. It is not a medical diagnosis — it measures direction over time, not a single bad day.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-21%20Trend%20&%20Risk.drawio.png)
+screen compares load, mood, sleep, rest, and capacity across four or eight weeks to surface recurring patterns (e.g. mood drops two days after any week above 90%). Burnout risk factors — weeks above 85%, recovery debt, mood direction, sleep deficit — are shown with individual scores and a recommended action.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-22%20Weekly%20Debrief.drawio.png)
+second Sunday reflection where the student selects what drained them most and what actually helped. Ballast generates a plain-language weekly summary and discloses exactly what it will tune in its model the following week based on the student's answers.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-23%20Why%20How%20What%20If.drawio.png)
+number or result in Ballast can be tapped to reveal its explanation. WHY shows the rule that triggered it. HOW breaks down the arithmetic step by step across all five areas. WHAT IF temporarily removes a commitment and recalculates live, letting the student explore trade-offs before committing to a change.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-25%20AI%20Assistant.drawio.png)
+student describes upcoming commitments in plain language; BAL parses the message into structured entries and presents them for review before saving. BAL never calculates load, capacity, risk, or forecasts — those are computed by Ballast's rules engine. BAL only converts natural language into commitments and explains results in plain English.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-26%20Ask%20About%20Yourself.drawio.png)
+student can ask BAL personal questions about their own data (e.g. "Why am I more exhausted this week?"). BAL retrieves and compares calculated Ballast data across weeks to produce an evidence-based explanation. Every claim is grounded in data the system has actually computed — BAL never invents an answer.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-27%20Diary%20Privacy.drawio.png)
+controls exactly how much their private diary can inform the AI assistant: off (commitment data only), numbers only (load and check-in scores), or numbers plus diary text. The diary never leaves the device and is never analysed by the app unless the student explicitly grants access through this setting.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-28%20Safe%20Support%20Route.drawio.png)
+burnout risk remains sustained and high, Ballast surfaces a voluntary link to university counselling or a helpline — framed as an option, never a directive. Ballast does not diagnose, does not give medical advice, does not report the student, and does not contact anyone automatically. The student decides whether to engage.
 
-The user flow demonstrates the intended journey from onboarding and workload assessment to planning, daily check-ins, workload analysis, intervention and weekly review.
+
 
 ## 2.3 Mentor Consultation
 
