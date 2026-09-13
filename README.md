@@ -515,25 +515,29 @@ The user flow demonstrates the intended journey from onboarding and workload ass
 1. Current Week Capacity&nbsp;  
    &nbsp;  
    Users view their current weekly capacity across Mental, Time and Task. By adding commitments and completing check-ins, the capacity level updates to show whether their planned workload is manageable or approaching overload.&nbsp;
-2. Rebalance Proposal  
+2. Rebalance Proposal &nbsp; 
    ![](UI/rebalance_proposal.png)
+   &nbsp;
    When Ballast detects an overloaded week, users can select “Add and Rebalance” at the Add Task Section. Ballast will then propose a revised schedule by changing when commitments take place while users can either Apply Plan or Tweak It before confirming.&nbsp;
-3. Recovery Plan  
+3. Recovery Plan  &nbsp;
    ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/14%20%C2%B7%20Post-shift%20sequencer.png?raw=true)
+   &nbsp;
    When the user's capacity becomes high, Ballast recommends recovery activities and rest periods based on their current workload and recovery needs. Users can follow the suggested plan or adjust it according to their preference.&nbsp;
-4. Burnout Forecast  
-   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/18%20%C2%B7%20Burnout%20forecast.png?raw=true)  
+4. Burnout Forecast  &nbsp;
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/18%20%C2%B7%20Burnout%20forecast.png?raw=true) &nbsp; 
    Users can view their predicted burnout risk based on their workload, capacity and recent patterns. The forecast helps users identify when their current pace may become unsustainable and encourages earlier action.&nbsp;
-5. Why/How/What If  
-   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/What%20if.png?raw=true)
+5. Why/How/What If  &nbsp;
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/What%20if.png?raw=true)&nbsp;
    When users reach a high capacity level, they can explore Why they are overloaded, How their commitments contributed to the current level and What If they continue at the same pace. This turns Ballast's capacity score into an understandable explanation rather than a simple number.&nbsp;
-6. Diary  
-   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/22%20%C2%B7%20Private%20diary.png?raw=true)
+6. Diary  &nbsp;
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/22%20%C2%B7%20Private%20diary.png?raw=true)&nbsp;
    Users can privately record their thoughts, experiences and feelings. Ballast's AI can analyse diary entries alongside check-ins and workload patterns to better understand the user's emotional state and provide more personalised insights into their overall capacity.&nbsp;
 7. Voice Assistant&nbsp;  
     &nbsp;  
-   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/24%20%C2%B7%20Speaking%20to%20it.png?raw=true)
+    ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/24%20%C2%B7%20Speaking%20to%20it.png?raw=true)
+   &nbsp;
    Users can speak naturally to Ballast to create commitments, tasks or deadlines instead of entering them manually. This reduces the effort required to capture commitments especially when users are busy or on the move.&nbsp;
+
 8. Ballast Representing Burnout Level  
    ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/08%20%C2%B7%20Home%20-%20Load%20RingSHIP.png?raw=true)
    The Ballast provides a simple visual representation of the user's burnout level. As burnout risk increases, the candle's visual state changes, allowing users to understand their current risk quickly without relying only on numbers or graphs.&nbsp;
