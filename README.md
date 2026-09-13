@@ -1,7 +1,7 @@
 # Ballast by [Team Name]
 
-**Team:** [Member 1], [Member 2], [Member 3], [Member 4] &nbsp;
-**Problem Statement:** Stress & Workload Manager &nbsp;
+**Team:** [Member 1], [Member 2], [Member 3], [Member 4]
+&nbsp;**Problem Statement:** Stress & Workload Manager &nbsp;
 **Video Presentation:** [Unlisted YouTube Link](#) &nbsp;
 **Presentation Slides:** [Public Link](#)
 
