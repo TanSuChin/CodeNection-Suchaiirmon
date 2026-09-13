@@ -167,6 +167,276 @@ Users can ask:
 
 Ballast provides the calculation and information behind the result instead of presenting an unexplained score.
 
+### How the app works out your number
+
+**Step 1 — You tell it what you are carrying.** For each thing, roughly how long it will take, when it is due, and how much it matters. You can type it in as a form, or just tell the assistant in plain words.
+
+&nbsp;
+
+**Step 2 — You check in for fifteen seconds a day.** Four taps: how long you slept, your energy, your mood, your stress level. That is the entire daily commitment.
+
+&nbsp;
+
+**Step 3 — The app works out how full each of the five areas is.** It compares what you are carrying against what you can carry.
+
+&nbsp;
+
+Two things here are different from every other tool we looked at, and they are the reason the number means anything.
+
+&nbsp;
+
+**What you can handle shrinks when you are running on empty.** If you have been sleeping five and a half hours against a target of seven and a half, Ballast treats your thinking capacity as roughly a quarter smaller than normal. Nothing about your workload changed — you are simply working with less. This is why the same week can feel far worse than an identical one a month ago, and it is the thing students find hardest to explain to other people.
+
+&nbsp;
+
+_One exception, on purpose:_ time and errands do **not** shrink. A bad week still has 168 hours in it. Your energy genuinely drops; the clock does not. That difference is why a student can be at 80% on time and 128% on thinking in the very same week.
+
+&nbsp;
+
+**Your worst area counts for more than your average.** If you simply averaged the five scores, a student who is comfortable in four areas and completely overwhelmed in one would come out looking fine. Ballast deliberately gives extra weight to whichever area is worst, so a problem in one part of your life cannot hide behind four healthy ones.
+
+&nbsp;
+
+**Step 4 — You get one number and one sentence.** For example: _"You're at 103% this week. Thinking is the problem — it's at 128%."_ Tap the number and you can see exactly which commitments produced it.
+
+### How the number is actually calculated
+
+Everything above comes from four short calculations. They run on the phone, offline, in a fraction of a second. Nothing is guessed by a black box — a student can follow every step, and so can a reviewer.
+
+#### Calculation 1 — how much you can handle this week
+
+R \= 1 \+ 0.04 × (your average sleep − your sleep target)
+
+&nbsp;
+
+         + 0.05 × (your average energy − 3\)
+
+&nbsp;
+
+         + 0.03 × (your average mood   − 3\)
+
+&nbsp;
+
+         − 0.02 × (days since your last real break, counted up to 7\)
+
+&nbsp;
+
+Your capacity this week \= your normal capacity × R
+
+&nbsp;
+
+**In plain words.** `R` is a multiplier, kept between 0.6 and 1.15. Sleeping below your target pulls it down, so does low energy, low mood, and a long run without a break. If `R` comes out at 0.73, you are working with roughly three quarters of your usual capacity.
+
+&nbsp;
+
+It applies to **Thinking, Body and People only**. Time and Errands keep their full capacity, because a bad week still has 168 hours in it. Your energy genuinely drops; the clock does not.
+
+#### Calculation 2 — how heavy one commitment is
+
+weight \= hours × how much it draws on that area
+
+&nbsp;
+
+                  ×  urgency
+
+&nbsp;
+
+                  ×  avoidance
+
+&nbsp;
+
+urgency \= 1 \+ 1 ÷ (days until due) capped at 2.0
+
+&nbsp;
+
+avoidance \= 1.3 if flagged "I keep putting this off", otherwise 1.0
+
+&nbsp;
+
+**In plain words.** An eight-hour report that leans heavily on thinking (0.9) and is due in two days (urgency 1.5) is far heavier than eight hours of shifts. Urgency and avoidance apply to the **thinking** part only — a deadline getting closer does not add hours to a task, it adds pressure. Same with avoidance: a job you keep dodging sits in your head all week even while you never touch it. That is real weight, and no other app counts it.
+
+#### Calculation 3 — the overall figure
+
+How full an area is \= total weight in that area ÷ your capacity for it
+
+&nbsp;
+
+Overall \= 0.7 × (weighted average of all five) \+ 0.3 × (your worst area)
+
+&nbsp;
+
+Area weights: Thinking 30% · Time 30% · Body 15% · People 15% · Errands 10%
+
+&nbsp;
+
+**In plain words.** Seventy per cent of the figure is a fair average across your whole life. The other thirty per cent is your single worst area. That second part is what stops one overwhelmed area disappearing behind four healthy ones.
+
+#### Calculation 4 — the direction you are heading
+
+Risk \= 0.30 × how much of the last 28 days you spent above 85%
+
+&nbsp;
+
+      +  0.25 × rest you are owed
+
+&nbsp;
+
+      +  0.20 × how fast your mood is falling
+
+&nbsp;
+
+      +  0.15 × sleep you are short
+
+&nbsp;
+
+      +  0.10 × rest blocks you booked and then missed
+
+&nbsp;
+
+**In plain words.** Notice that not one of these asks how bad today was. Every one asks **how long**. A student sitting at a steady 70% for five weeks with no rest scores higher here than one who hit 115% for two days and then properly recovered — which is the correct answer, and the whole reason this is a separate figure from the one on the home screen.
+
+#### A worked example — Aina, one real week
+
+Final year, 18 hours of class, a 14-hour café job. Every number below is calculated, not assumed.
+
+&nbsp;
+
+**Her check-ins that week**
+
+&nbsp;
+
+|        | Mon | Tue | Wed | Thu | Fri | Sat | Sun | Average  |
+| :----- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :------- |
+| Sleep  | 6.0 | 5.5 | 4.5 | —   | 5.0 | 6.5 | 5.5 | **5.5**  |
+| Energy | 3   | 2   | 2   | —   | 2   | 3   | 2   | **2.33** |
+| Mood   | 3   | 3   | 2   | —   | 2   | 3   | 2   | **2.50** |
+
+&nbsp;
+
+_Thursday skipped — the app used her rolling average and told her so._
+
+&nbsp;
+
+**Step 1 — her capacity multiplier**
+
+&nbsp;
+
+R \= 1 \+ 0.04 × (5.5 − 7.5) \+ 0.05 × (2.33 − 3\) \+ 0.03 × (2.50 − 3\) − 0.02 × 7
+
+&nbsp;
+
+\= 1 − 0.080 − 0.034 − 0.015 − 0.140
+
+&nbsp;
+
+\= 0.73
+
+&nbsp;
+
+Her thinking capacity drops from 30 units to **21.9**. Her workload did not change. She is simply running on less.
+
+&nbsp;
+
+**Step 2 — what she is carrying, in Thinking**
+
+&nbsp;
+
+| Commitment                | hours | × area | × urgency | × avoidance | \= weight |
+| :------------------------ | :---- | :----- | :-------- | :---------- | :-------- |
+| FYP report, due Wednesday | 8     | 0.9    | 1.50      | **1.3**     | **14.04** |
+| Data Mining assignment    | 3     | 0.9    | 1.25      | 1.0         | 3.38      |
+| Reading response          | 2     | 0.8    | 1.33      | 1.0         | 2.13      |
+| Group project meeting     | 2     | 0.5    | 2.00      | 1.0         | 2.00      |
+| Café shifts × 2           | 12    | 0.3    | 1.00      | 1.0         | 3.60      |
+| Cousin's wedding          | 6     | 0.3    | 1.20      | 1.0         | 2.16      |
+| Errands × 3               | 3     | 0.2    | 1.10      | 1.0         | 0.66      |
+|                           |       |        |           | **Total**   | **28.0**  |
+
+&nbsp;
+
+One task is half her mental week. **The FYP alone is 14 of those 28 units — and 3.2 of them exist purely because she flagged it as something she keeps avoiding.**
+
+&nbsp;
+
+**Step 3 — all five areas**
+
+&nbsp;
+
+| Area     | Weight carried | Normal capacity | × R  | Capacity now | How full |
+| :------- | :------------- | :-------------- | :--- | :----------- | :------- |
+| Thinking | 28.0           | 30              | 0.73 | 21.9         | **128%** |
+| Time     | 36.0 hrs       | 45              | —    | 45.0         | **80%**  |
+| Body     | 15.2           | 24              | 0.73 | 17.5         | **87%**  |
+| People   | 11.8           | 18              | 0.73 | 13.1         | **90%**  |
+| Errands  | 4.0            | 10              | —    | 10.0         | **40%**  |
+
+&nbsp;
+
+**Look at Time: 80%.** Aina has a fifth of her week unspoken for. Any calendar app would tell her she is fine. She is at 128% on thinking. That single row is the argument for measuring five things instead of one.
+
+&nbsp;
+
+**Step 4 — her overall figure**
+
+&nbsp;
+
+weighted average = 0.30(1.28) \+ 0.30(0.80) \+ 0.15(0.87) \+ 0.15(0.90) \+ 0.10(0.40)
+
+&nbsp;
+
+                 = 0.930
+
+&nbsp;
+
+Overall = 0.7 × 0.930 + 0.3 × 1.28
+
+&nbsp;
+
+        = 0.651 + 0.384
+
+&nbsp;
+
+        = 1.03   →   103%, overloaded
+
+&nbsp;
+
+**The average on its own would have said 93%** — comfortably inside the amber band, no warning triggered, nothing happens. Adding her worst area pushes it to 103% and the app steps in. That difference is the whole reason the calculation is built this way.
+
+&nbsp;
+
+**Step 5 — where she is heading**
+
+&nbsp;
+
+| What it looks at                 | Her value              | Score | Weight   | Adds     |
+| :------------------------------- | :--------------------- | :---- | :------- | :------- |
+| Days above 85% in the last month | 20 of 28               | 0.71  | 0.30     | 0.213    |
+| Rest she is owed                 | 6.3 hours              | 0.53  | 0.25     | 0.133    |
+| Mood falling                     | 3.4 → 2.5 over 4 weeks | 0.45  | 0.20     | 0.090    |
+| Sleep she is short               | −14 hours              | 0.67  | 0.15     | 0.101    |
+| Rest blocks missed               | 2 of 4                 | 0.50  | 0.10     | 0.050    |
+|                                  |                        |       | **Risk** | **0.59** |
+
+&nbsp;
+
+Rising 0.018 per day → (0.75 − 0.59) ÷ 0.018 \= 8.9 days
+
+&nbsp;
+
+Reaches high risk on Thursday 11 September.
+
+&nbsp;
+
+With the two suggested rest blocks, the "rest owed" figure starts falling instead
+
+&nbsp;
+
+of rising → she never reaches it.
+
+&nbsp;
+
+That difference — a date, versus no date — is the entire product in one line. And it is shown with its honesty attached: **9 check-ins in 14 days, medium confidence.** Below five check-ins, the forecast is hidden rather than guessed.
+
 ---
 
 # 2. Ideation & Process
@@ -246,28 +516,27 @@ The user flow demonstrates the intended journey from onboarding and workload ass
    &nbsp;  
    Users view their current weekly capacity across Mental, Time and Task. By adding commitments and completing check-ins, the capacity level updates to show whether their planned workload is manageable or approaching overload.&nbsp;
 2. Rebalance Proposal  
-   ![][image1]  
+   ![](UI/rebalance_proposal.png)
    When Ballast detects an overloaded week, users can select “Add and Rebalance” at the Add Task Section. Ballast will then propose a revised schedule by changing when commitments take place while users can either Apply Plan or Tweak It before confirming.&nbsp;
 3. Recovery Plan  
-   ![][image2]  
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/14%20%C2%B7%20Post-shift%20sequencer.png?raw=true)
    When the user's capacity becomes high, Ballast recommends recovery activities and rest periods based on their current workload and recovery needs. Users can follow the suggested plan or adjust it according to their preference.&nbsp;
 4. Burnout Forecast  
-   ![][image3]  
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/18%20%C2%B7%20Burnout%20forecast.png?raw=true)  
    Users can view their predicted burnout risk based on their workload, capacity and recent patterns. The forecast helps users identify when their current pace may become unsustainable and encourages earlier action.&nbsp;
 5. Why/How/What If  
-   ![][image4]  
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/What%20if.png?raw=true)
    When users reach a high capacity level, they can explore Why they are overloaded, How their commitments contributed to the current level and What If they continue at the same pace. This turns Ballast's capacity score into an understandable explanation rather than a simple number.&nbsp;
 6. Diary  
-   ![][image5]  
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/22%20%C2%B7%20Private%20diary.png?raw=true)
    Users can privately record their thoughts, experiences and feelings. Ballast's AI can analyse diary entries alongside check-ins and workload patterns to better understand the user's emotional state and provide more personalised insights into their overall capacity.&nbsp;
 7. Voice Assistant&nbsp;  
-   &nbsp;  
+    &nbsp;  
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/24%20%C2%B7%20Speaking%20to%20it.png?raw=true)
    Users can speak naturally to Ballast to create commitments, tasks or deadlines instead of entering them manually. This reduces the effort required to capture commitments especially when users are busy or on the move.&nbsp;
-8. Candle Representing Burnout Level  
-   &nbsp;  
-   The candle provides a simple visual representation of the user's burnout level. As burnout risk increases, the candle's visual state changes, allowing users to understand their current risk quickly without relying only on numbers or graphs.&nbsp;
-
-We recommend you embed or link 4–8 key screens as images, with a caption on each explaining the interaction
+8. Ballast Representing Burnout Level  
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/08%20%C2%B7%20Home%20-%20Load%20RingSHIP.png?raw=true)
+   The Ballast provides a simple visual representation of the user's burnout level. As burnout risk increases, the candle's visual state changes, allowing users to understand their current risk quickly without relying only on numbers or graphs.&nbsp;
 
 ## **4\. What Makes It Different**
 
