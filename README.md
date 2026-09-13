@@ -1,7 +1,7 @@
 # Ballast by Suchaiirmon
 
-**Team:** Tan Su Chin, Chairis A/L Pum, Muhammad Irfan Bin Muhammad Zaki, Wattcharak A/L Wiang
-&nbsp;**Problem Statement:** Stress & Workload Manager &nbsp;
+**Team:** [Member 1], [Member 2], [Member 3], [Member 4]
+**Problem Statement:** Stress & Workload Manager &nbsp;
 **Video Presentation:** [Unlisted YouTube Link](#) &nbsp;
 **Presentation Slides:** [Public Link](#)
 
@@ -546,7 +546,7 @@ We explain plainly at the moment of choosing that the top level sends what you h
 
 ### Mindmap
 
-![Mindmap](mindmapN.png)
+![Mindmap](mindmap.png)
 
 The mindmap shows the different directions considered during ideation, including productivity, wellbeing, AI assistance, workload tracking and student lifestyle management.
 
@@ -585,7 +585,7 @@ Students view their current weekly capacity across Mental, Time and Energy. By a
 
 2. **Rebalance Proposal**
 
-   ![](UI/rebalance_proposal.png)
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/12%20%C2%B7%20Rebalance%20proposal.png?raw=true)
 
    When Ballast detects an overloaded week, students can select “Add and Rebalance” at the Add Task Section. Ballast will then propose a revised schedule by changing when commitments take place while students can either Apply Plan or Tweak It before confirming.
    
