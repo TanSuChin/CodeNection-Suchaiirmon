@@ -1,7 +1,7 @@
 # Ballast by [Team Name]
 
 **Team:** [Member 1], [Member 2], [Member 3], [Member 4]
-&nbsp;**Problem Statement:** Stress & Workload Manager &nbsp;
+**Problem Statement:** Stress & Workload Manager &nbsp;
 **Video Presentation:** [Unlisted YouTube Link](#) &nbsp;
 **Presentation Slides:** [Public Link](#)
 
@@ -547,7 +547,7 @@ We explain plainly at the moment of choosing that the top level sends what you h
 
 ### Mindmap
 
-![Mindmap](mindmapN.png)
+![Mindmap](mindmap.png)
 
 The mindmap shows the different directions considered during ideation, including productivity, wellbeing, AI assistance, workload tracking and student lifestyle management.
 
