@@ -4,6 +4,7 @@
 &nbsp;**Problem Statement:** Stress & Workload Manager &nbsp;
 **Video Presentation:** [Unlisted YouTube Link](https://youtu.be/5VDlvHbCopc) &nbsp;
 **Presentation Slides:** [Link Slide](https://canva.link/pt4q741fztjlxhk)
+**Figma Link:** [Figma Link](https://www.figma.com/design/S9wb7EqAUK2WaXGLazL6ua/Suchaiirmon?node-id=0-1&t=ld2oVAaOcXBGWSa1-1)
 
 ---
 
