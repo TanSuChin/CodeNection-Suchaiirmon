@@ -669,6 +669,10 @@ burnout risk remains sustained and high, Ballast surfaces a voluntary link to un
 
 ### UI Prototype
 
+
+
+**FIGMA PROTOTYPE:** [Figma Link](https://www.figma.com/design/S9wb7EqAUK2WaXGLazL6ua/Suchaiirmon?node-id=0-1&t=ld2oVAaOcXBGWSa1-1)
+
 1. **Current Week Capacity**
 
 ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/08%20%C2%B7%20Home%20-%20Load%20RingSHIP.png?raw=true)
