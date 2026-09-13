@@ -586,7 +586,7 @@ Users view their current weekly capacity across Mental, Time and Task. By adding
 
 2. **Rebalance Proposal**
 
-   ![](UI/rebalance_proposal.png)
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/12%20%C2%B7%20Rebalance%20proposal.png?raw=true)
 
    When Ballast detects an overloaded week, users can select “Add and Rebalance” at the Add Task Section. Ballast will then propose a revised schedule by changing when commitments take place while users can either Apply Plan or Tweak It before confirming.
 
