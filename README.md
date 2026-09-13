@@ -580,7 +580,9 @@ The user flow demonstrates the intended journey from onboarding and workload ass
 
 1. **Current Week Capacity**
 
-   Users view their current weekly capacity across Mental, Time and Task. By adding commitments and completing check-ins, the capacity level updates to show whether their planned workload is manageable or approaching overload.
+![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/08%20%C2%B7%20Home%20-%20Load%20RingSHIP.png?raw=true)
+
+Users view their current weekly capacity across Mental, Time and Task. By adding commitments and completing check-ins, the capacity level updates to show whether their planned workload is manageable or approaching overload.
 
 2. **Rebalance Proposal**
 
@@ -621,6 +623,7 @@ The user flow demonstrates the intended journey from onboarding and workload ass
 8. **Ballast Representing Burnout Level**
 
    ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/08%20%C2%B7%20Home%20-%20Load%20RingSHIP.png?raw=true)
+   ![](https://github.com/TanSuChin/CodeNection-Suchaiirmon/blob/main/UI/08%20%C2%B7%20Home%20-%20Load%20Ring.png?raw=true)
 
    The Ballast provides a simple visual representation of the user's burnout level. As burnout risk increases, the candle's visual state changes, allowing users to understand their current risk quickly without relying only on numbers or graphs.
 
