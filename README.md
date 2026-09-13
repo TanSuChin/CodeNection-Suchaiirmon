@@ -553,6 +553,29 @@ The mindmap shows the different directions considered during ideation, including
 ### User Flow
 
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-02%20Find%20Capacity.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-03%20First%20Commitments.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-04%20Streak%20Preference.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-06%20Morning%20Notification.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-07%20Daily%20Check-In.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-08%20Home%20Dashboard.drawio.pngBallast_User_Flows_DrawIO-03%20First%20Commitments.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-09%20Commitment%20Inbox.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-10%20Add%20Commitment.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-11%20Say%20No%20Intercept.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-12%20Rebalance%20My%20Week.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-13%20Plan%20Applied.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-14%20After-Shift%20Sequencer.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-15%20Recovery.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-16%20Protected%20Rest.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-17%20Focus%20Timer.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-18%20Guided%20Breathing.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-20%20Burnout%20Forecast.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-21%20Trend%20&%20Risk.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-22%20Weekly%20Debrief.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-23%20Why%20How%20What%20If.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-25%20AI%20Assistant.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-26%20Ask%20About%20Yourself.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-27%20Diary%20Privacy.drawio.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-28%20Safe%20Support%20Route.drawio.png)
 
 The user flow demonstrates the intended journey from onboarding and workload assessment to planning, daily check-ins, workload analysis, intervention and weekly review.
 
