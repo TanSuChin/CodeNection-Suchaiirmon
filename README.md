@@ -183,13 +183,8 @@ The mindmap shows the different directions considered during ideation, including
 
 ### User Flow
 
-![User Flow](userFlow/user-flow.png)
+![User Flow](user-flow.png)
 ![User Flow](userFlow/Ballast_User_Flows_03%20First%20Commitments.png) 
-![User Flow](userFlow/Ballast_User_Flows_07%20Daily%20Check-In.png)
-![User Flow](userFlow/Ballast_User_Flows_11%20Say%20No%20Intercept.png)
-![User Flow](userFlow/Ballast_User_Flows_15%20Recovery.png)
-![User Flow](userFlow/Ballast_User_Flows_19%20Recovery%20Reminders.png)
-![User Flow](userFlow/Ballast_User_Flows_23%20Why%20How%20What%20If.png)
 
 The user flow demonstrates the intended journey from onboarding and workload assessment to planning, daily check-ins, workload analysis, intervention and weekly review.
 
