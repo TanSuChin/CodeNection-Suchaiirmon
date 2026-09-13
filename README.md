@@ -2,7 +2,7 @@
 
 **Team:** Tan Su Chin, Chairis A/L Pum, Muhammad Irfan Bin Muhammad Zaki, Wattcharak A/L Wiang
 &nbsp;**Problem Statement:** Stress & Workload Manager &nbsp;
-**Video Presentation:** [Unlisted YouTube Link](#) &nbsp;
+**Video Presentation:** [Unlisted YouTube Link](https://youtu.be/5VDlvHbCopc) &nbsp;
 **Presentation Slides:** [Link Slide](https://canva.link/pt4q741fztjlxhk)
 
 ---
@@ -600,8 +600,6 @@ student can ask BAL personal questions about their own data (e.g. "Why am I more
 controls exactly how much their private diary can inform the AI assistant: off (commitment data only), numbers only (load and check-in scores), or numbers plus diary text. The diary never leaves the device and is never analysed by the app unless the student explicitly grants access through this setting.
 ![User Flow](userFlow/Ballast_User_Flows_DrawIO-28%20Safe%20Support%20Route.drawio.png)
 burnout risk remains sustained and high, Ballast surfaces a voluntary link to university counselling or a helpline — framed as an option, never a directive. Ballast does not diagnose, does not give medical advice, does not report the student, and does not contact anyone automatically. The student decides whether to engage.
-
-
 
 ## 2.3 Mentor Consultation
 
