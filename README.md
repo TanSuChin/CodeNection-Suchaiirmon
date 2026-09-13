@@ -481,7 +481,7 @@ That difference — a date, versus no date — is the entire product in one line
 
 ### Mindmap
 
-![Mindmap](mindmap.png)
+![Mindmap](mindmapN.png)
 
 The mindmap shows the different directions considered during ideation, including productivity, wellbeing, AI assistance, workload tracking and student lifestyle management.
 
