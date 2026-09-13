@@ -183,21 +183,27 @@ The mindmap shows the different directions considered during ideation, including
 
 ### User Flow
 ![First Commitments](userFlow/Ballast_User_Flows_03%20First%20Commitments.png) 
+
 Guides initial task creation by capturing size, priority, and timing, auto-categorizing the area for user confirmation before looping to add more.
 
 ![Daily Check-In](userFlow/Ballast_User_Flows_07%20Daily%20Check-In.png)
+
 Collects a quick log of sleep, energy, mood, and stress to update rolling averages and recalculate overall capacity if changes are significant.
 
 ![Say No Intercept](userFlow/Ballast_User_Flows_11%20Say%20No%20Intercept.png)
+
 Triggers an overload warning when a new task exceeds capacity, prompting the user to add it anyway, save it to a "Maybe List," or generate a rebalancing proposal.
 
 ![Recovery](userFlow/Ballast_User_Flows_15%20Recovery.png)
+
 Checks overall load and energy to offer custom rest suggestions, allowing users to book a protected, locked rest block or continue without booking.
 
 ![Recovery Reminders](userFlow/Ballast_User_Flows_19%20Recovery%20Reminders.png)
+
 Monitors recovery needs and sends actionable reminders (e.g., hydration or sleep) only if notification limits and quiet hours allow, updating user data upon completion or dismissal.
 
 ![Why How What If](userFlow/Ballast_User_Flows_23%20Why%20How%20What%20If.png)
+
 Tapping a result lets users explore its underlying rules ("WHY"), step-by-step math breakdown ("HOW"), or test dropping a commitment ("WHAT IF") to restore or permanently delete it.
 
 The user flow demonstrates the intended journey from onboarding and workload assessment to planning, daily check-ins, workload analysis, intervention and weekly review.
