@@ -182,9 +182,7 @@ Ballast provides the calculation and information behind the result instead of pr
 The mindmap shows the different directions considered during ideation, including productivity, wellbeing, AI assistance, workload tracking and student lifestyle management.
 
 ### User Flow
-
-![User Flow](user-flow.png)
-![User Flow](userFlow/Ballast_User_Flows_03%20First%20Commitments.png) 
+![First Commitments](userFlow/Ballast_User_Flows_03%20First%20Commitments.png) 
 Guides initial task creation by capturing size, priority, and timing, auto-categorizing the area for user confirmation before looping to add more.
 
 ![Daily Check-In](userFlow/Ballast_User_Flows_07%20Daily%20Check-In.png)
