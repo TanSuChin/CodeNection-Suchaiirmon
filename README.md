@@ -552,7 +552,7 @@ The mindmap shows the different directions considered during ideation, including
 
 ### User Flow
 
-![User Flow](user-flow.png)
+![User Flow](userFlow/Ballast_User_Flows_DrawIO-02%20Find%20Capacity.drawio.png)
 
 The user flow demonstrates the intended journey from onboarding and workload assessment to planning, daily check-ins, workload analysis, intervention and weekly review.
 
